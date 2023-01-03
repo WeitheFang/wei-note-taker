@@ -1,4 +1,5 @@
 const notes = require("express").Router();
+
 const {
   readFromFile,
   readAndAppend,
@@ -11,6 +12,19 @@ notes.get("/", (req, res) => {
   console.info(`${req.method} request received for notes`);
 
   readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
+});
+
+//Get Route for a specific note
+notes.get("/:id", (req, res) => {
+  const noteId = req.params.id;
+  readFromFile("./db/db.json")
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      const result = json.filter((note) => note.note_id === noteId);
+      return result.length > 0
+        ? res.json(result)
+        : res.json("No note with that ID");
+    });
 });
 
 //POST Route for a new note
