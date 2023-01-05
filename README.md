@@ -4,6 +4,8 @@
 
 This application was designed for the user who wants to write and save notes, so that they can easily organize thoughts and keep track of tasks. This application uses the Express.js on the backend and the will save and retrieve notes from a JSON file. This application has also been deployed on Heroku:
 
+link to application: https://wei-note-taker.herokuapp.com/
+
 ## Installation
 
 Before using this application, please make sure you have these programs installed:
