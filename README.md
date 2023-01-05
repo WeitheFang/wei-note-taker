@@ -27,7 +27,15 @@ Then run the following code in terminal to initiate the application:
 node server.js
 ```
 
-From there, the application will be hosted on the localhost:3001. To end your server in your terminal type: control + c
+From there, the application will be hosted on the localhost:3001.
+
+Press Get Started to start the application:
+![alt text](images/application-screen-shot-1.png)
+
+The note can be saved in the left-hand column when pressing the save icon button, and the existing note can be deleted by pressing the delete icon on the column.
+![alt text](images/application-screen-shot-1.png)
+
+To end your server in your terminal type: control + c
 
 ## Credits
 
